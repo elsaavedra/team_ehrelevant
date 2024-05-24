@@ -9,12 +9,12 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: '404.html',
+			fallback: undefined,
 			precompress: false,
 			strict: true
 		}),
 		paths: {
-			base: process.argv.include('dev') ? '' : process.env.BASE_PATH
+			//base: process.argv.include('dev') ? '' : process.env.BASE_PATH
 		}
 	}
 };
