@@ -1,4 +1,15 @@
+<script>
+	import a1 from '$lib/images/question_1a_plot1.png';
+    import b1 from '$lib/images/question_1b_plot1.png';
+    import c1 from '$lib/images/question_1c_plot1.png';
+    import a2 from '$lib/images/question_2a_plot1.png';
+    import b2 from '$lib/images/question_2b_plot1.png';
+    import c2 from '$lib/images/question_2c_plot1.png';
+    import hyp from '$lib/images/hypothesis_testing.png';
+</script>
+
 <body>
+    <marquee scrollamount=30>team_ehrelevant says hello world</marquee>
     <section>
         <div>
             <p id="quote">Education is not preparation for life; Education is life itself.</p>
@@ -127,9 +138,76 @@
         </section>
     </section>
 
-    <section class="wrapper2">
-        <h1 style="text-align:center">About Us</h1>
+    <section>
+        <h1> Visualization of Data </h1>
+        <section id="sub">
+            <img src={a1} alt="Participation in Arts" width=10% class="center">
+            <p style="text-align:center">Level of Participation in Arts vs Highest Educational Attainment</p>
+        </section>
+        <section id="sub">
+            <img src={b1} alt="Participation in Science" width=10% class="center">
+            <p style="text-align:center">Level of Participation in Science vs Highest Educational Attainment</p>
+        </section>
+        <section id="sub">
+            <img src={c1} alt="Participation in Business" width=10% class="center">
+            <p style="text-align:center">Level of Participation in Business vs Highest Educational Attainment</p>
+        </section>
+        <section id="sub">
+            <img src={a2} alt="Participation in Business" width=25% class="center">
+            <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Arts</p>
+        </section>
+        <section id="sub">
+            <img src={b2} alt="Participation in Business" width=25% class="center">
+            <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
+        </section>
+        <section id="sub">
+            <img src={c2} alt="Participation in Business" width=25% class="center">
+            <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
+        </section>
+    </section>
 
+    <section>
+        <h1> Hypothesis Testing </h1>
+        <section id="sub">
+            <img src={hyp} alt="Hypothesis Testing" width=10% class="center">
+            <p style="text-align:center">Significance of First Hypothesis</p>
+        </section>
+    </section>
+
+    <section>
+        <h1 style="text-align:center">About Us</h1>
+        <section class="wrapper2">
+            <div class="about1">
+                <h1 style="text-align:center">Edzo Acyatan</h1>
+                <p style="font-size: 15; text-align: center">
+                    Hey hi hello, Edzo here! I'm a 2nd year CS student of UP Diliman (as of writing this intro). I've always enjoyed playing games, and 
+                    it felt like the next natural step for me was learning where these games come from. I enjoy making my code as efficient (and short) as it could be. <br> <br>
+
+                    Besides all the computer science stuff, I'm an avid reader of Manhwa (mostly on Webtoons). I also enjoy making people disappointed with my cheesy and dry humor.
+                </p>
+                <p style="text-align:center"> <br> <br> <br> csacyatan1@up.edu.ph</p>
+            </div>
+            <div class="about2">
+                <h1 style="text-align:center">Lawrence Bermudez</h1>
+                <p style="font-size: 15; text-align: center">
+                    Good morning there! I am Lawrence, a 2nd year Computer Science student at UP Diliman. <br> <br>
+
+                        You may contact me through my email below, or through [REDACTED]. See you!
+                </p>
+                <p style="text-align:center"> <br> <br> <br> drbermudez1@up.edu.ph</p>
+            </div>
+            <div class="about3">
+                <h1 style="text-align:center">Yuwen Saavedra</h1>
+                <p style="font-size: 15; text-align: center"> 
+                    o/ Hi! I'm Yuwen and I am a 2nd year Computer Science student at UP Diliman. I like video games (a little bit too much) so now I'm in the CS world! <br> <br>
+                    Other than malding over terrible gacha rates ingame, I mostly spend the day finishing requirements and watch 
+                </p>
+                <p style="text-align:center"> <br> <br> <br> elsaavedra@up.edu.ph</p>
+            </div>
+        </section>
+    </section>
+
+    <section>
     </section>
 </body>
     <style>
@@ -268,12 +346,39 @@
             grid-template-columns: 1fr 1fr 1fr ;
         }
 
+        .about1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(99,132,173,0.3);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .about2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: rgb(99,132,173,0.3);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .about3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: rgb(99,132,173,0.3);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
         a {
             color: #03042d;
         }
 
         li {
             list-style: none;
+            font-size: 20px
         }
 
         p {
