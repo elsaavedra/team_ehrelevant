@@ -190,9 +190,9 @@
             <div class="about2">
                 <h1 style="text-align:center">Lawrence Bermudez</h1>
                 <p style="font-size: 15; text-align: center">
-                    Good morning there! I am Lawrence, a 2nd year Computer Science student at UP Diliman. <br> <br>
-
-                        You may contact me through my email below, or through [REDACTED]. See you!
+                    Good morning there! I am Lawrence, a 2nd year Computer Science student at UP Diliman. I enjoy programming casually, whether for games or for just appreciating the logic with how programs work <br> <br>
+                    With the little time I usually have, I generally play lighter games such as rhythm games, especially osu!. <br> <br>
+                    You may contact me through my email below, or through my IP at [REDACTED]. See you!
                 </p>
                 <p style="text-align:center"> <br> <br> <br> drbermudez1@up.edu.ph</p>
             </div>
@@ -200,7 +200,7 @@
                 <h1 style="text-align:center">Yuwen Saavedra</h1>
                 <p style="font-size: 15; text-align: center"> 
                     o/ Hi! I'm Yuwen and I am a 2nd year Computer Science student at UP Diliman. I like video games (a little bit too much) so now I'm in the CS world! <br> <br>
-                    Other than malding over terrible gacha rates ingame, I mostly spend the day finishing requirements and watch 
+                    Other than malding over terrible gacha rates ingame, I mostly spend the day finishing requirements and watching vtubers (go watch Takane Lui please)
                 </p>
                 <p style="text-align:center"> <br> <br> <br> elsaavedra@up.edu.ph</p>
             </div>
