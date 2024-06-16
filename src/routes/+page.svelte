@@ -11,11 +11,11 @@
 <body>
     <ul id="navbar">
         <li id="logo"> team_ehrelevant </li>
-        <li> <a href="#intro">Intro</a> </li>
-        <li> <a href="#prob">Problem</a> </li>
-        <li> <a href="#data">Data Analysis</a> </li>
-        <li> <a href="#model">Modelling</a> </li>
-        <li> <a href="#conc">Conclusion</a> </li>
+        <li> <a>Intro</a> </li>
+        <li> <a>Problem</a> </li>
+        <li> <a>Data Analysis</a> </li>
+        <li> <a>Modelling</a> </li>
+        <li> <a>Conclusion</a> </li>
     </ul>
     
     <div id="content">
