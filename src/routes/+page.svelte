@@ -9,6 +9,16 @@
 </script>
 
 <body>
+    <ul id="navbar">
+        <li id="logo"> team_ehrelevant </li>
+        <li> <a href="#intro">Intro</a> </li>
+        <li> <a href="#prob">Problem</a> </li>
+        <li> <a href="#data">Data Analysis</a> </li>
+        <li> <a href="#model">Modelling</a> </li>
+        <li> <a href="#conc">Conclusion</a> </li>
+    </ul>
+    
+    <div id="content">
     <marquee scrollamount=30>team_ehrelevant says hello world</marquee>
     <section>
         <div>
@@ -125,7 +135,7 @@
                 </p>
         </section>
 
-        <section id="sub">
+        <section id="sub1">
         <h2> Dataset Link </h2>
             <p><a href="https://docs.google.com/spreadsheets/d/1wG50_tLEtZrU1jB0AkM7doo6a6njIig8xorNHGk05Ig/edit#gid=1228805475">Here</a> is a link to the datasheet that will be used for this research. This contains the following: </p>
             
@@ -206,9 +216,7 @@
             </div>
         </section>
     </section>
-
-    <section>
-    </section>
+    </div>
 </body>
     <style>
         * {
@@ -248,7 +256,22 @@
             border-radius: 20px;
         }
 
+        #content{
+            margin-left:15%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
         #sub {
+            padding: 5em;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+            border-radius: 20px;
+            background-color: rgb(99,132,173,0.7);
+            text-align: justify;
+        }
+
+        #sub1 {
             padding: 5em;
             margin-top: 3vh;
             margin-bottom: 3vh;
@@ -262,14 +285,14 @@
             margin-top: 3vh;
             margin-bottom: 3vh;
             border-radius: 20px;
-            background-color: rgb(99,132,173,0.6);
+            background-color: rgb(99,132,173,0.5);
             text-align: justify;
         }
 
         #sub3 {
             padding: 1em;
             border-radius: 20px;
-            background-color: rgb(99,132,173,0.6);
+            background-color: rgb(99,132,173,0.5);
             text-align: justify;
         }
 
@@ -294,6 +317,17 @@
                 bottom: -0.5em;
                 right: -1vw;
             }
+        }
+
+        #navbar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            background-color: rgb(93,100,106);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
         }
 
         .wrapper{
@@ -343,7 +377,7 @@
 
         .wrapper2{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         .about1{
@@ -379,6 +413,24 @@
         li {
             list-style: none;
             font-size: 20px
+        }
+
+        li a {
+            display: block;
+            color: #FFF;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #F0F0F0;
+            color: #000;
+        }
+
+        #logo{
+            font-size: 30px;
+            text-align: left;
+            padding: 8px 16px;
         }
 
         p {
