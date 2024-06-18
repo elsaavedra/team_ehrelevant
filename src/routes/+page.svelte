@@ -9,17 +9,18 @@
 </script>
 
 <body>
-    <ul id="navbar">
-        <li id="logo"> team_ehrelevant </li>
-        <li> <a>Intro</a> </li>
-        <li> <a>Problem</a> </li>
-        <li> <a>Data Analysis</a> </li>
-        <li> <a>Modelling</a> </li>
-        <li> <a>Conclusion</a> </li>
+    <ul class="navbar">
+        <a id="sussy" href="#Amogus" style="font-family: Times New Roman"> team_ehrelevant </a>
+        <a href="#Introduction">Introduction</a>
+        <a href="#DataRepo">Data Repository</a>
+        <a href="#DataVisual">Data Visualization</a>
+        <a href="#Model">Modelling</a>
+        <a href="#Conc">Conclusion</a>
     </ul>
     
-    <div id="content">
-    <marquee scrollamount=30>team_ehrelevant says hello world</marquee>
+    <div class="content">
+    <marquee scrollamount=30 id="Introduction">team_ehrelevant says hello world</marquee>
+    
     <section>
         <div>
             <p id="quote">Education is not preparation for life; Education is life itself.</p>
@@ -68,7 +69,7 @@
     </section>
 
     
-    <section class="wrapper">
+    <section class="wrapper2">
         <div class="box11">
             <p style="text-align: center; padding: 10px; font-size: 30px"> Hypothesis #1</p>       
             <h3> Null Hypothesis </h3>
@@ -96,7 +97,7 @@
 
     </section>
 
-    <section>
+    <section id="DataRepo">
     <h1> Dataset Description </h1>
         <section id="sub">
             <h2> Dataset Source: FLEMMS 2019 </h2>
@@ -148,45 +149,64 @@
         </section>
     </section>
 
-    <section>
+    <section id="DataVisual">
         <h1> Visualization of Data </h1>
-        <section id="sub">
-            <img src={a1} alt="Participation in Arts" width=10% class="center">
-            <p style="text-align:center">Level of Participation in Arts vs Highest Educational Attainment</p>
+        <section class="wrapper3">
+            <section id="sub">
+                <img src={a1} alt="Participation in Arts" width=50% class="center">
+                <p style="text-align:center">Level of Participation in Arts vs Highest Educational Attainment</p>
+            </section>
+            <section id="sub">
+                <img src={b1} alt="Participation in Science" width=50% class="center">
+                <p style="text-align:center">Level of Participation in Science vs Highest Educational Attainment</p>
+            </section>
+            <section id="sub">
+                <img src={c1} alt="Participation in Business" width=50% class="center">
+                <p style="text-align:center">Level of Participation in Business vs Highest Educational Attainment</p>
+            </section>
         </section>
-        <section id="sub">
-            <img src={b1} alt="Participation in Science" width=10% class="center">
-            <p style="text-align:center">Level of Participation in Science vs Highest Educational Attainment</p>
-        </section>
-        <section id="sub">
-            <img src={c1} alt="Participation in Business" width=10% class="center">
-            <p style="text-align:center">Level of Participation in Business vs Highest Educational Attainment</p>
-        </section>
-        <section id="sub">
-            <img src={a2} alt="Participation in Business" width=25% class="center">
-            <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Arts</p>
-        </section>
-        <section id="sub">
-            <img src={b2} alt="Participation in Business" width=25% class="center">
-            <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
-        </section>
-        <section id="sub">
-            <img src={c2} alt="Participation in Business" width=25% class="center">
-            <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
+
+        <section class="wrapper3">
+            <section id="sub">
+                <img src={a2} alt="Knowledge in Arts" class="center">
+                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Arts</p>
+            </section>
+            <section id="sub">
+                <img src={b2} alt="Knowledge in Science" class="center">
+                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Science</p>
+            </section>
+            <section id="sub">
+                <img src={c2} alt="Knowledge in Business" class="center">
+                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
+            </section>
         </section>
     </section>
 
     <section>
         <h1> Hypothesis Testing </h1>
         <section id="sub">
-            <img src={hyp} alt="Hypothesis Testing" width=10% class="center">
+            <img src={hyp} alt="Hypothesis Testing" class="center" style='width: 50%'>
             <p style="text-align:center">Significance of First Hypothesis</p>
         </section>
     </section>
 
-    <section>
+    <section id="Model">
+        <h1> Modelling </h1>
+        <section id="sub">
+            <p style="text-align:center">Lorem Ipsum</p>
+        </section>
+    </section>
+
+    <section id="Conc">
+        <h1> Conclusion </h1>
+        <section id="sub">
+            <p style="text-align:center">Lorem Ipsum</p>
+        </section>
+    </section>
+
+    <section id="Amogus">
         <h1 style="text-align:center">About Us</h1>
-        <section class="wrapper2">
+        <section class="wrapper3">
             <div class="about1">
                 <h1 style="text-align:center">Edzo Acyatan</h1>
                 <p style="font-size: 15; text-align: center">
@@ -210,7 +230,8 @@
                 <h1 style="text-align:center">Yuwen Saavedra</h1>
                 <p style="font-size: 15; text-align: center"> 
                     o/ Hi! I'm Yuwen and I am a 2nd year Computer Science student at UP Diliman. I like video games (a little bit too much) so now I'm in the CS world! <br> <br>
-                    Other than malding over terrible gacha rates ingame, I mostly spend the day finishing requirements and watching vtubers (go watch Takane Lui please)
+                    Other than malding over terrible gacha rates ingame, I mostly spend the day finishing requirements and dipping my hands into projects relating to Computer Science such Front-End Web development and game development.
+                    I also enjoy watching vtubers in my spare time (go watch <a href="https://www.youtube.com/@TakaneLui">Takane Lui</a>)
                 </p>
                 <p style="text-align:center"> <br> <br> <br> elsaavedra@up.edu.ph</p>
             </div>
@@ -253,19 +274,17 @@
             margin: 1vh;
             border-radius: 25px;
             text-align: justify;
-            border-radius: 20px;
         }
 
-        #content{
-            margin-left:15%;
-            margin-top: 0;
+        .content{
+            margin-top: 50px;
             margin-bottom: 0;
+            position: static;
         }
 
         #sub {
-            padding: 5em;
-            margin-top: 3vh;
-            margin-bottom: 3vh;
+            padding: 2em;
+            margin: 2vh;
             border-radius: 20px;
             background-color: rgb(99,132,173,0.7);
             text-align: justify;
@@ -319,20 +338,50 @@
             }
         }
 
-        #navbar{
-            list-style-type: none;
+        .navbar{
+            top: 0;
             margin: 0;
-            padding: 0;
-            width: 15%;
+            padding: 10px;
+            width: 100%;
             background-color: rgb(93,100,106);
+            height: auto;
             position: fixed;
-            height: 100%;
-            overflow: auto;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .navbar a{
+            float: left;
+            padding: auto;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 1vw;
+            text-decoration: none;
+        }
+
+        .navbar #sussy:hover{
+            background-color: white;
+            transition: 0.6s;
+            color: #03042d;
+        }
+
+        .navbar a:hover{
+            background-color: #03042d;
+            color: white;
+            transition: 0.4s;
         }
 
         .wrapper{
             display: grid;
+            padding: 5vw 5vh;
             grid-template-columns: 1fr 1fr;
+        }
+
+        .wrapper2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
         }
 
         .box1{
@@ -375,7 +424,7 @@
             background-color: rgb(99,132,173,0.3);
         }
 
-        .wrapper2{
+        .wrapper3{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
@@ -403,7 +452,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 100%;
         }
 
         a {
@@ -413,24 +462,6 @@
         li {
             list-style: none;
             font-size: 20px
-        }
-
-        li a {
-            display: block;
-            color: #FFF;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: #F0F0F0;
-            color: #000;
-        }
-
-        #logo{
-            font-size: 30px;
-            text-align: left;
-            padding: 8px 16px;
         }
 
         p {
