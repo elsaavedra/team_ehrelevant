@@ -248,10 +248,28 @@
             color: #FFF;
         }
 
+        /* Cursor Wheel CSS */
         body::-webkit-scrollbar {
-            display: none;
+            width: 10px;
         }
 
+        body::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: inset 0 0 5px grey;
+            opacity: 0.5;
+        }
+        
+        body::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px; 
+        }
+
+        body::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        /* General CSS */
         body{
             height: 100vh;
             background-color: #000;
@@ -276,6 +294,7 @@
             text-align: justify;
         }
 
+        /* Specific CSS */
         .content{
             margin-top: 50px;
             margin-bottom: 0;
@@ -338,6 +357,7 @@
             }
         }
 
+        /* Navbar CSS */
         .navbar{
             top: 0;
             margin: 0;
@@ -360,6 +380,10 @@
             text-decoration: none;
         }
 
+        .navbar #sussy{
+            border-right-style: solid;
+        }
+
         .navbar #sussy:hover{
             background-color: white;
             transition: 0.6s;
@@ -371,6 +395,8 @@
             color: white;
             transition: 0.4s;
         }
+        
+        /* Grid-based CSS */
 
         .wrapper{
             display: grid;
@@ -447,7 +473,8 @@
             background-color: rgb(99,132,173,0.3);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
-
+        
+        /* Miscellaneous */
         .center {
             display: block;
             margin-left: auto;
