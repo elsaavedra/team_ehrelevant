@@ -169,6 +169,25 @@
 
     <section id="DataVisual">
         <h1> Visualization of Data </h1>
+        <section id="sub3">
+            <p style="text-align:justify">Here we have three box plots which plots the participant's highest educational attainment against their level of participation. The left-most, middle, and right-most plots correspond to the participants' participation in the Arts, Sciences, and Business respectively.
+                The specifics of each level of participation and educational attainment is discussed below.
+                The "boxes" in the plot corresponds to the frequency of answers for each category. This means that each column's width is only respective to itself and not globally related.</p>
+            
+            <br>
+
+            <p style="text-align:justify">For the arts, we can see a general upward trend between higher educational attainment and level of participation. 
+                This suggests that education is seen to be closely related to the level of one's participation in the field of arts. 
+                This also suggests that to feel more involved in art, a higher educational attainment would be better.
+                <br> <br>
+                For sciences, there's also a general upward trend, similar to the arts, where a higher level of educational attainment allows one to feel more involved. 
+                It is interesting to note that those who only received an early childhood education has responses evenly spread out from 1–4. 
+                This either suggest that the participant is not aware of the full scale of their participation, or that more education does not necessarily equate to more participation.
+                <br> <br>
+                Finally, for business, it's interesting to see that after finishing highschool and your bachelor's degree, there is a general downward trend in level of participation. 
+                This may suggest that further education after your bachelor's degree will actually decrease your level of participation.</p>
+        </section>
+
         <section class="wrapper3">
             <section id="sub4">
                 <img src={a1} alt="Participation in Arts" class="center" style='border-radius: 25px; margin: 5px'>
@@ -185,37 +204,79 @@
         </section>
 
         <section id="sub3">
-            <p style="text-align:center">Lorem Ipsum</p>
+            <p>lorem ipsum</p>
         </section>
 
         <section class="wrapper3">
             <section id="sub4">
                 <img src={a2} alt="Knowledge in Arts" class="center" style='border-radius: 25px; margin: 5px'>
-                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Arts</p>
+                <p style="text-align:center">Perceived Usefulness of Knowledge vs Level of Participation in Arts</p>
             </section>
             <section id="sub4">
                 <img src={b2} alt="Knowledge in Science" class="center" style='border-radius: 25px; margin: 5px'>
-                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Science</p>
+                <p style="text-align:center">Perceived Usefulness of Knowledge vs Level of Participation in Science</p>
             </section>
             <section id="sub4">
                 <img src={c2} alt="Knowledge in Business" class="center" style='border-radius: 25px; margin: 5px'>
-                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
+                <p style="text-align:center">Perceived Usefulness of Knowledge vs Level of Participation in Business</p>
             </section>
-        </section>
-
-        <section id="sub3">
-            <p style="text-align:center">Lorem Ipsum</p>
         </section>
     </section>
 
     <section>
         <h1> Hypothesis Testing </h1>
         <div class="wrapper" id="sub1">
-        <section id="box1" style="padding: 10px;">
-            <img src={hyp} alt="Hypothesis Testing" class="center" style='width: 100%'>
-            <p style="text-align:center">Significance of First Hypothesis</p>
+        <section id="box1" class="image">
+            <div>
+                <img src={hyp} alt="Hypothesis Testing" class="center" style='width: 100%'>
+                <p style="text-align:center">Significance of First Hypothesis</p>
+            </div>
         </section>
         <section id="box2">
+            <p> Hypothesis testing was done for the first objective, determining the correlation between the respondents' Level of Participation in different fields of expertise and their Highest Level of Educational Attainment. 
+                Each of these variables is defined on an ordinal scale, with their values as follows: </p>
+            
+            <br>
+            <p>Highest Level of Educational Attainment</p>
+            <ul>
+                <li> 0 (Did not study) </li>
+                <li> 1 (Early Childhood Education) </li>
+                <li> 2 (Elementary School) </li>
+                <li> 3 (Junior High School) </li>
+                <li> 4 (Senior High School) </li>
+                <li> 5 (Post-Secondary Non-Tertiary) </li>
+                <li> 6 (Short-cycle Tertiary) </li>
+                <li> 7 (Bachelor or eqv.) </li>
+                <li> 8 (Master or eqv.) </li>
+                <li> 9 (Doctorate or eqv.) </li>
+            </ul>
+            <br>
+            <p>Level of Participation A (Arts and Performance)</p>
+            <ul>
+                <li> 5 (Always) </li>
+                <li> 4 (Often) </li>
+                <li> 3 (Sometimes) </li>
+                <li> 2 (Rarely) </li>
+                <li> 1 (Never) </li>
+            </ul>
+            <br>
+            <p>Level of Participation B (Science and Technology)</p>
+            <ul>
+                <li> 5 (Always) </li>
+                <li> 4 (Often) </li>
+                <li> 3 (Sometimes) </li>
+                <li> 2 (Rarely) </li>
+                <li> 1 (Never) </li>
+            </ul>
+            <br>
+            <p>Level of Participation C (Work and Business) </p>
+            <ul>
+                <li> 5 (Always) </li>
+                <li> 4 (Often) </li>
+                <li> 3 (Sometimes) </li>
+                <li> 2 (Rarely) </li>
+                <li> 1 (Never) </li>
+            </ul>
         </section>
         </div> 
     </section>
@@ -401,7 +462,7 @@
     }
 
     #DataRepo{
-        background-color: rgb(209, 209, 209, 0.8);
+        background-color: rgb(209, 209, 209, 0.9);
         border-radius: 0;
     }
 
@@ -542,7 +603,7 @@
 
     .image{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         grid-column-start: 1;
@@ -562,8 +623,11 @@
     }
 
     li {
-        list-style: none;
-        font-size: 20px
+        font-size: 20px;
+    }
+
+    ul {
+        padding-left: 30px;
     }
 
     p {
