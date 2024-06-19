@@ -15,7 +15,6 @@
         <a href="#Introduction">Introduction</a>
         <a href="#DataRepo">Data Repository</a>
         <a href="#DataVisual">Data Visualization</a>
-        <a href="#Model">Modelling</a>
         <a href="#Conc">Conclusion</a>
     </ul>
     
@@ -141,9 +140,16 @@
                     </p>
                     <br>
                     <p> 
-                        Furthermore, certain fields were found to be the most relevant to the study as variables to be kept, namely the Level of Participation (Q15A_ARTS, Q15B_SCIENCE, Q15C_BUSINESS), Knowledge in Job (Q21_KNOWLEDGE), and Highest Educational Attainment (C12_HEA_RT04).
-                        Other than these, other “potentially useful” fields were also kept for possible sub-correlation or confounding variables, which include the Technical-Vocational Variables (Q5_TECHVOC, Q5_TECHVOC_COURSE, Q5_SPECIFY_COURSE), the TESDA National Certification (Q6_TESDA_CERT),
-                        Activities to help other people (Q20_ACTIVITY), Age (C5_AGE_RT04), Sex (C4_SEX_RT04), and Ongoing School Status (C14_ATTEND_SCHOOL_RT04).
+                        Furthermore, certain fields were found to be the most relevant to the study as variables to be kept, namely the 
+                        <li> Level of Participation (Q15A_ARTS, Q15B_SCIENCE, Q15C_BUSINESS), </li>
+                        <li> Knowledge in Job (Q21_KNOWLEDGE), and </li>
+                        <li> Highest Educational Attainment (C12_HEA_RT04). </li>
+                        <br><br>
+                        Other than these, other “potentially useful” fields were also kept for possible sub-correlation or confounding variables, which include 
+                        <li> the Technical-Vocational Variables (Q5_TECHVOC, Q5_TECHVOC_COURSE, Q5_SPECIFY_COURSE), </li>
+                        <li> the TESDA National Certification (Q6_TESDA_CERT), </li>
+                        <li> Activities to help other people (Q20_ACTIVITY), Age (C5_AGE_RT04), Sex (C4_SEX_RT04), and </li>
+                        <li> Ongoing School Status (C14_ATTEND_SCHOOL_RT04). </li>
                     </p>
                     <br>
                     <p> 
@@ -170,22 +176,27 @@
     <section id="DataVisual">
         <h1> Visualization of Data </h1>
         <section id="sub3">
-            <p style="text-align:justify">Here we have three box plots which plots the participant's highest educational attainment against their level of participation. The left-most, middle, and right-most plots correspond to the participants' participation in the Arts, Sciences, and Business respectively.
+            <p style="text-align:justify">
+                Here we have three box plots which plots the participant's highest educational attainment against their level of participation. 
+                The left-most, middle, and right-most plots correspond to the participants' participation in the Arts, Sciences, and Business respectively.
+                <br><br>
                 The specifics of each level of participation and educational attainment is discussed below.
-                The "boxes" in the plot corresponds to the frequency of answers for each category. This means that each column's width is only respective to itself and not globally related.</p>
-            
-            <br>
-
-            <p style="text-align:justify">For the arts, we can see a general upward trend between higher educational attainment and level of participation. 
+                <br><br>
+                The "boxes" in the plot corresponds to the frequency of answers for each category. 
+                This means that each column's width is only respective to itself and not globally related. 
+                It's important to note that most respondents are under the junior high school and bachelor categories, with the other categories having significantly less respondents compared to these two. 
+                <br><br>
+                For the arts, we can see a general upward trend between higher educational attainment and level of participation. 
                 This suggests that education is seen to be closely related to the level of one's participation in the field of arts. 
-                This also suggests that to feel more involved in art, a higher educational attainment would be better.
-                <br> <br>
+                This suggest that to feel more involved in art, a higher educational attainment would be better.
+                <br><br>
                 For sciences, there's also a general upward trend, similar to the arts, where a higher level of educational attainment allows one to feel more involved. 
                 It is interesting to note that those who only received an early childhood education has responses evenly spread out from 1–4. 
-                This either suggest that the participant is not aware of the full scale of their participation, or that more education does not necessarily equate to more participation.
-                <br> <br>
+                This either suggest that the participant is not aware of the full scale of their participation, or that more education does not necessarily equate to more participation
+                <br><br>
                 Finally, for business, it's interesting to see that after finishing highschool and your bachelor's degree, there is a general downward trend in level of participation. 
-                This may suggest that further education after your bachelor's degree will actually decrease your level of participation.</p>
+                This may suggest that further education after your bachelor's degree will actually decrease your level of participation.
+            </p>
         </section>
 
         <section class="wrapper3">
@@ -204,7 +215,22 @@
         </section>
 
         <section id="sub3">
-            <p>lorem ipsum</p>
+            <p>
+                Here we have three violin plots which plots the participant's level of participation against their percieved usefulness of knowledge. 
+                The left-most, middle, and right-most plots correspond to the participants' participation in the Arts, Sciences, and Business respectively.
+                <br><br>
+                The specifics of each level of participation is discussed below. Meanwhile, 1 corresponds to yes (Knowledge IS useful) and 2 corresponds to no (Knowledge is NOT useful). There are no values in between despite the visuals suggesting so. 
+                <br><br>
+                Similar to the box plot, each "swell" in the plot corresponds to the frequency of answers for each category. This means that each column's width is only respective to itself and not globally related.
+                <br><br>
+                For all three categories—the arts, sciences, and business—we can see a general larger swell in the perceived usefulness of knowledge with a score of 1 as level of participation increases. 
+                At a level of participation score of 1, we can see a roughly equal score of perceived usefulness of knowledge, with this knowledge generally becoming more useful with higher levels of participation.
+                <br><br>
+                For the arts, specifically, we see the highest frequency with a level of participation score of 4. 
+                <br><br>
+                For science, we see the highest frequency with a level participation score of 4, with 3 not differing by much. 
+                <br><br>
+                For business, we see the highest frequency with a level participation score of 5. It is also interesting to note that those who perceive their knowledge as not useful is thicker compared to the arts and sciences for each level. This may suggest that knowledge is perceived as not as useful for business as compared to art and science.</p>
         </section>
 
         <section class="wrapper3">
@@ -229,7 +255,7 @@
         <section id="box1" class="image">
             <div>
                 <img src={hyp} alt="Hypothesis Testing" class="center" style='width: 100%'>
-                <p style="text-align:center">Significance of First Hypothesis</p>
+                <p style="text-align:center">Significance of First Hypothesis Across Different Fields</p>
             </div>
         </section>
         <section id="box2">
@@ -281,17 +307,33 @@
         </div> 
     </section>
 
-    <section id="Model">
-        <h1> Modelling </h1>
-        <section id="sub3">
-            <p style="text-align:center">Lorem Ipsum</p>
-        </section>
-    </section>
-
     <section id="Conc">
         <h1> Conclusion </h1>
         <section id="sub3">
-            <p style="text-align:center">Lorem Ipsum</p>
+            <p style="text-align:justify">Lorem Ipsum</p>
+        </section>
+
+        <section id="sub3">
+            <p style="text-align:justify">
+                Moving forward with this project, data used to conduct this study is actually quite limited and skewed across different categories of highest educational attainment. 
+                More than half of the participants' highest educational attainment is junior highschool with bachelor or eqv. taking a majority of what remains. 
+                Although unlikely, more data across different aspects of education would be best to better understand the distribution of responses.</p>
+            <br><br>
+            <p style="text-align:justify">
+                Furthermore, machine learning can also be utilized in order to interpret the data as well, through data classification. 
+                Each objective can be studied with a neural network that attempts to predict the dependent variable based on set feature variables. 
+                For instance, the first model can attempt to determine an individual's most probable level of participation in each of Arts, Science, and Business using a classification model, which can be implemented using libraries such as TensorFlow and Keras.
+                These level of participation may be predicted by the model based on the individuals':
+            </p>
+            <br>
+                <ul>
+                    <li> highest level of educational attainment </li>
+                    <li> other demographic information </li>
+                    <li> personal values </li>
+                    <li> experiences with sports </li>
+                    <li> exposure to communication media </li>
+                    <li> etc. </li>
+                </ul>
         </section>
     </section>
 
