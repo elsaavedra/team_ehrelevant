@@ -99,12 +99,12 @@
             <p style="text-align: center; padding: 10px; font-size: 30px"> Hypothesis #2</p>    
             <h3> Null Hypothesis </h3>
                     <p id="sub2">
-                        Across different fields of expertise, the perceived usefulness of knowledge learned from school does not influence Filipinos seeking jobs.
+                        Across each different field of expertise, the perceived usefulness of knowledge learned from school by Filipinos has no correlation with their level of participation in that field.
                     </p>
 
                 <h3> Alternative Hypothesis </h3>
                     <p id="sub2">
-                        Across different fields of expertise, the perceived usefulness of knowledge learned from school influences Filipinos seeking jobs.
+                        The perceived usefulness of knowledge learned from school by Filipinos has a correlation with their level of participation in some or all of the specified fields of expertise.
                     </p>
         </div>
 
@@ -310,7 +310,16 @@
     <section id="Conc">
         <h1> Conclusion </h1>
         <section id="sub3">
-            <p style="text-align:justify">Lorem Ipsum</p>
+            <p style="text-align:justify">
+                To conclude this study, we must check whether or not we have answered the objectives.
+                <br><br>
+                For our first hypothesis, we have achieved a p-value lower than 0.005 for all three fields—the arts, sciences, and business. This means that the results are all statistically significant for all three fields.
+                This also means that we reject the null hypothesis. As such, the level of participation of Filipinos is correlated to their highest level of educational attainment across all three fields of expertise.
+                <br><br>
+                For our second hypothesis, we have achieved [[a p-value lower than 0.005]] for [[all three fields]]—the arts, sciences, and business.
+                This means that the results [[are all statistically significant]] for [[all three categories]]. This also means that we [[reject]] the null hypothesis.
+                As such, across the different fields of expertiese, the perceived usefulness of knowledge learned from school [[does not influence]] influences Filipinos seeking jobs.
+            </p>
         </section>
 
         <section id="sub3">
