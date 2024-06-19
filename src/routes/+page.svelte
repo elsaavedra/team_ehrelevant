@@ -19,6 +19,7 @@
     </ul>
     
     <div class="content">
+    <!-- svelte-ignore a11y-distracting-elements -->
     <marquee scrollamount=30 id="Introduction">team_ehrelevant says hello world</marquee>
     
     <section>
@@ -239,259 +240,260 @@
     </section>
     </div>
 </body>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: #FFF;
-        }
 
-        /* Cursor Wheel CSS */
-        body::-webkit-scrollbar {
-            width: 10px;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #FFF;
+    }
 
-        body::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-            box-shadow: inset 0 0 5px grey;
-            opacity: 0.5;
-        }
-        
-        body::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 10px; 
-        }
+    /* Cursor Wheel CSS */
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
 
-        body::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-        
-        /* General CSS */
-        body{
-            height: 100vh;
-            background-color: #000;
-            background-image: url($lib/images/bg2.jpg);
-            background-size: cover;
-            background-repeat: repeat;
-            background-position: center;
-            background-attachment: fixed;
-        }
+    body::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px grey;
+        opacity: 0.5;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px; 
+    }
 
-        section {
-            padding: 5vh;
-            margin-top: 2vh;
-            margin-bottom: 2vh;
-            border-radius: 25px;
-        }
+    body::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+    /* General CSS */
+    body{
+        height: 100vh;
+        background-color: #000;
+        background-image: url($lib/images/bg2.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
 
-        div{
-            padding: 3vh;
-            margin: 1vh;
-            border-radius: 25px;
-            text-align: justify;
-        }
+    section {
+        padding: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border-radius: 25px;
+    }
 
-        /* Specific CSS */
-        .content{
-            margin-top: 50px;
-            margin-bottom: 0;
-            position: static;
-        }
+    div{
+        padding: 3vh;
+        margin: 1vh;
+        border-radius: 25px;
+        text-align: justify;
+    }
 
-        #sub {
-            padding: 2em;
-            margin: 2vh;
-            border-radius: 20px;
-            background-color: rgb(99,132,173,0.7);
-            text-align: justify;
-        }
+    /* Specific CSS */
+    .content{
+        margin-top: 50px;
+        margin-bottom: 0;
+        position: static;
+    }
 
-        #sub1 {
-            padding: 5em;
-            margin-top: 3vh;
-            margin-bottom: 3vh;
-            border-radius: 20px;
-            background-color: rgb(99,132,173,0.3);
-            text-align: justify;
-        }
-        
-        #sub2 {
-            padding: 1em;
-            margin-top: 3vh;
-            margin-bottom: 3vh;
-            border-radius: 20px;
-            background-color: rgb(99,132,173,0.5);
-            text-align: justify;
-        }
+    #sub {
+        padding: 2em;
+        margin: 2vh;
+        border-radius: 20px;
+        background-color: rgb(99,132,173,0.7);
+        text-align: justify;
+    }
 
-        #sub3 {
-            padding: 1em;
-            border-radius: 20px;
-            background-color: rgb(99,132,173,0.5);
-            text-align: justify;
-        }
+    #sub1 {
+        padding: 5em;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        border-radius: 20px;
+        background-color: rgb(99,132,173,0.3);
+        text-align: justify;
+    }
+    
+    #sub2 {
+        padding: 1em;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        border-radius: 20px;
+        background-color: rgb(99,132,173,0.5);
+        text-align: justify;
+    }
 
-        #quote {
-            font-size: 50px;
-            text-align: center;
-            position: relative;
-            padding: 0 40px;
-            &::before{
-                content: "\201C";
-                position: absolute;
-                font-weight: bold;
-                font-size: 3em;
-                top: -0.3em;
-                left: -1vw;
-            }
-            &::after{
-                content: "\201D";
-                position: absolute;
-                font-weight: bold;
-                font-size: 3em;
-                bottom: -0.5em;
-                right: -1vw;
-            }
-        }
+    #sub3 {
+        padding: 1em;
+        border-radius: 20px;
+        background-color: rgb(99,132,173,0.5);
+        text-align: justify;
+    }
 
-        /* Navbar CSS */
-        .navbar{
-            top: 0;
-            margin: 0;
-            padding: 10px;
-            width: 100%;
-            background-color: rgb(93,100,106);
-            height: auto;
-            position: fixed;
-            overflow: hidden;
-            z-index: 1;
+    #quote {
+        font-size: 50px;
+        text-align: center;
+        position: relative;
+        padding: 0 40px;
+        &::before{
+            content: "\201C";
+            position: absolute;
+            font-weight: bold;
+            font-size: 3em;
+            top: -0.3em;
+            left: -1vw;
         }
+        &::after{
+            content: "\201D";
+            position: absolute;
+            font-weight: bold;
+            font-size: 3em;
+            bottom: -0.5em;
+            right: -1vw;
+        }
+    }
 
-        .navbar a{
-            float: left;
-            padding: auto;
-            font-size: 20px;
-            color: white;
-            text-align: center;
-            padding: 1vw;
-            text-decoration: none;
-        }
+    /* Navbar CSS */
+    .navbar{
+        top: 0;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        background-color: rgb(93,100,106);
+        height: auto;
+        position: fixed;
+        overflow: hidden;
+        z-index: 1;
+    }
 
-        .navbar #sussy{
-            border-right-style: solid;
-        }
+    .navbar a{
+        float: left;
+        padding: auto;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 1vw;
+        text-decoration: none;
+    }
 
-        .navbar #sussy:hover{
-            background-color: white;
-            transition: 0.6s;
-            color: #03042d;
-        }
+    .navbar #sussy{
+        border-right-style: solid;
+    }
 
-        .navbar a:hover{
-            background-color: #03042d;
-            color: white;
-            transition: 0.4s;
-        }
-        
-        /* Grid-based CSS */
+    .navbar #sussy:hover{
+        background-color: white;
+        transition: 0.6s;
+        color: #03042d;
+    }
 
-        .wrapper{
-            display: grid;
-            padding: 5vw 5vh;
-            grid-template-columns: 1fr 1fr;
-        }
+    .navbar a:hover{
+        background-color: #03042d;
+        color: white;
+        transition: 0.4s;
+    }
+    
+    /* Grid-based CSS */
 
-        .wrapper2{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            width: 100%;
-        }
+    .wrapper{
+        display: grid;
+        padding: 5vw 5vh;
+        grid-template-columns: 1fr 1fr;
+    }
 
-        .box1{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .wrapper2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
 
-        .box2{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .box1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .box3{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .box2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .box11{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .box3{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .box12{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .box11{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .wrapper3{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+    .box12{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .about1{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            background-color: rgb(99,132,173,0.3);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        .about2{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            background-color: rgb(99,132,173,0.3);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        .about3{
-            grid-column-start: 3;
-            grid-column-end: 4;
-            background-color: rgb(99,132,173,0.3);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Miscellaneous */
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-        }
+    .wrapper3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-        a {
-            color: #03042d;
-        }
+    .about1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: rgb(99,132,173,0.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .about2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgb(99,132,173,0.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .about3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: rgb(99,132,173,0.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Miscellaneous */
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
 
-        li {
-            list-style: none;
-            font-size: 20px
-        }
+    a {
+        color: #03042d;
+    }
 
-        p {
-            font-size: 20px
-        }
-    </style>
+    li {
+        list-style: none;
+        font-size: 20px
+    }
+
+    p {
+        font-size: 20px
+    }
+</style>
