@@ -311,8 +311,6 @@
         <h1> Conclusion </h1>
         <section id="sub3">
             <p style="text-align:justify">
-                To conclude this study, we must check whether or not we have answered the objectives.
-                <br><br>
                 We primarily focused on addressing the first objective and hypothesis, which was achieved through statistical testing.
                 We have achieved a p-value lower than 0.005 for all three fields—the arts, sciences, and business. This means that the results are all statistically significant for all three fields.
                 This also means that we reject the null hypothesis. As such, the level of participation of Filipinos is correlated to their highest level of educational attainment across all three fields of expertise.
