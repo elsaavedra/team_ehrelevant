@@ -19,7 +19,8 @@
         <a href="#Conc">Conclusion</a>
     </ul>
     
-    <div class="content">
+    <section class="content">
+    <!-- svelte-ignore a11y-distracting-elements -->
     <marquee scrollamount=30 id="Introduction">team_ehrelevant says hello world</marquee>
     
     <section>
@@ -41,7 +42,8 @@
                 width: 40vw;
                 padding: 1em;
                 grid-column-start: 1;
-                grid-column-end: 2;">
+                grid-column-end: 2;
+                border-radius: 25px;">
             </div>
 
             <div id="sub">
@@ -111,9 +113,9 @@
     </section>
 
     <section id="DataRepo">
-    <h1> Dataset Description </h1>
+    <h1 style="font-size: 30px;"> Dataset Description </h1>
         <section id="sub1">
-            <h2> Dataset Source: FLEMMS 2019 </h2>
+            <h2 style="color: #03042d;"> Dataset Source: FLEMMS 2019 </h2>
                 <p id="sub3">
                     The Philippine Statistics Authority (PSA) organizes a survey known as the <a href = "https://psada.psa.gov.ph/catalog/FLEMMS/about"> Functional Literacy, Education and Mass Media Survey (FLEMMS) </a> as a regular check on the state of the country's education systems.
                     FLEMMS collects general information about each respondent's educational background, demographic information, and household information, followed by questions to ask and assess their ability to read, write, and answer questions.
@@ -124,7 +126,7 @@
         </section>
 
         <section id="sub1">
-            <h2> Data Collection </h2>
+            <h2 style="color: #03042d;"> Data Collection </h2>
                 <p id="sub3"> 
                     The results of the FLEMMS 2019 survey are divided into several CSV (Comma Separated Value) files tabulating the information gathered from each respondent.
                     Among the files, this study intends to investigate the data from the responses in the Household Name CSV file. The Household Name CSV contains the respondents' answers to the Individual Questionnaire, which contains questions that directly assess their educational background and overall literacy.
@@ -133,7 +135,7 @@
         </section>
 
         <section id="sub1">
-            <h2> Data Preprocessing </h2>
+            <h2 style="color: #03042d;"> Data Preprocessing </h2>
                 <div id="sub3">
                     <p> 
                         From the Household Name CSV, the first few fields are kept to uniquely identify each of the data points of the dataset, namely the Region (REG), Urbanity (URB), Household ID (HHID), and the Respondent Line Number (RESP_LNO).
@@ -152,7 +154,7 @@
         </section>
 
         <section id="sub1">
-        <h2> Dataset Link </h2>
+        <h2 style="color: #03042d;"> Dataset Link </h2>
             <div id="sub3">
                 <p><a href="https://docs.google.com/spreadsheets/d/1wG50_tLEtZrU1jB0AkM7doo6a6njIig8xorNHGk05Ig/edit#gid=1228805475">Here</a> is a link to the datasheet that will be used for this research. This contains the following: </p>
                 <br>
@@ -169,31 +171,31 @@
     <section id="DataVisual">
         <h1> Visualization of Data </h1>
         <section class="wrapper3">
-            <section id="sub1">
-                <img src={a1} alt="Participation in Arts" width=50% class="center">
+            <section id="sub4">
+                <img src={a1} alt="Participation in Arts" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Level of Participation in Arts vs Highest Educational Attainment</p>
             </section>
-            <section id="sub1">
-                <img src={b1} alt="Participation in Science" width=50% class="center">
+            <section id="sub4">
+                <img src={b1} alt="Participation in Science" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Level of Participation in Science vs Highest Educational Attainment</p>
             </section>
-            <section id="sub1">
-                <img src={c1} alt="Participation in Business" width=50% class="center">
+            <section id="sub4">
+                <img src={c1} alt="Participation in Business" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Level of Participation in Business vs Highest Educational Attainment</p>
             </section>
         </section>
 
         <section class="wrapper3">
-            <section id="sub1">
-                <img src={a2} alt="Knowledge in Arts" class="center">
+            <section id="sub4">
+                <img src={a2} alt="Knowledge in Arts" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Arts</p>
             </section>
-            <section id="sub1">
-                <img src={b2} alt="Knowledge in Science" class="center">
+            <section id="sub4">
+                <img src={b2} alt="Knowledge in Science" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Science</p>
             </section>
-            <section id="sub1">
-                <img src={c2} alt="Knowledge in Business" class="center">
+            <section id="sub4">
+                <img src={c2} alt="Knowledge in Business" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
             </section>
         </section>
@@ -254,283 +256,303 @@
             </div>
         </section>
     </section>
-    </div>
+</section>
 </body>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: #FFF;
-        }
 
-        /* Cursor Wheel CSS */
-        body::-webkit-scrollbar {
-            width: 10px;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #FFF;
+    }
 
-        body::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-            box-shadow: inset 0 0 5px grey;
-            opacity: 0.5;
-        }
-        
-        body::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 10px; 
-        }
+    /* Cursor Wheel CSS */
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
 
-        body::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-        
-        /* General CSS */
-        body{
-            height: 100vh;
-            background-color: #000;
-            background-image: url($lib/images/bg2.jpg);
-            background-size: cover;
-            background-repeat: repeat;
-            background-position: center;
-            background-attachment: fixed;
-        }
+    body::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px grey;
+        opacity: 0.5;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px; 
+    }
 
-        section {
-            padding: 5vh;
-            margin-top: 2vh;
-            margin-bottom: 2vh;
-            border-radius: 25px;
-        }
+    body::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+    /* General CSS */
+    body{
+        height: 100vh;
+        background-color: #000;
+        background-image: url($lib/images/bg2.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        background-attachment: fixed;
+        font-size: 20px;
+    }
 
-        div{
-            padding: 3vh;
-            margin: 1vh;
-            border-radius: 25px;
-            text-align: justify;
-        }
+    section {
+        padding: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border-radius: 25px;
+    }
 
-        /* Specific CSS */
-        .content{
-            margin-top: 50px;
-            margin-bottom: 0;
-            padding: 0;
-            position: static;
-        }
+    div{
+        padding: 3vh;
+        margin: 1vh;
+        border-radius: 25px;
+        text-align: justify;
+    }
 
-        #sub {
-            padding: 2em;
-            margin: 2vh;
-            border-radius: 20px;
-            background-color: rgb(99,132,173,0.6);
-            text-align: justify;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    /* Specific CSS */
+    .content{
+        margin-top: 70px;
+        margin-bottom: 0;
+        padding: 0;
+        position: static;
+    }
 
-        #sub1 {
-            padding: 5em;
-            margin: 2vh;
-            border-radius: 20px;
-            background-color: rgb(99,132,173,0.6);
-            text-align: justify;
-        }
-        
-        #sub2 {
-            padding: 1em;
-            margin-top: 3vh;
-            margin-bottom: 3vh;
-            border-radius: 20px;
-            background-color: rgb(99,132,173,0.5);
-            text-align: justify;
-        }
+    #sub {
+        padding: 2em;
+        margin: 2vh;
+        border-radius: 20px;
+        background-color: rgb(99,132,173,0.6);
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        #sub3 {
-            padding: 1em;
-            border-radius: 20px;
-            background-color: rgb(99,132,173,0.5);
-            text-align: justify;
-        }
+    #sub1 {
+        padding: 5em;
+        margin: 1vh;
+        border-radius: 20px;
+        background-color: rgb(99,132,173,0.6);
+        text-align: justify;
+    }
+    
+    #sub2 {
+        padding: 1em;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        border-radius: 20px;
+        background-color: rgb(99,132,173,0.5);
+        text-align: justify;
+    }
 
-        #quote {
-            font-size: 50px;
-            text-align: center;
-            position: relative;
-            padding: 0 40px;
-            &::before{
-                content: "\201C";
-                position: absolute;
-                font-weight: bold;
-                font-size: 3em;
-                top: -0.3em;
-                left: -1vw;
-            }
-            &::after{
-                content: "\201D";
-                position: absolute;
-                font-weight: bold;
-                font-size: 3em;
-                bottom: -0.5em;
-                right: -1vw;
-            }
-        }
+    #sub3 {
+        padding: 1em;
+        border-radius: 20px;
+        background-color: rgb(99,132,173,0.5);
+        text-align: justify;
+    }
 
-        /* Navbar CSS */
-        .navbar{
-            top: 0;
-            margin: 0;
-            padding: 10px;
-            width: 100%;
-            background-color: rgb(63, 65, 67);
-            height: auto;
-            position: fixed;
-            overflow: hidden;
-            z-index: 1;
+    #sub4 {
+        padding: 20px;
+        margin: 1vh;
+        border-radius: 20px;
+        background-color: rgb(27,24,28,0.8);
+        text-align: justify;
+    }
+    
+    #quote {
+        font-size: 50px;
+        text-align: center;
+        position: relative;
+        padding: 0 40px;
+        &::before{
+            content: "\201C";
+            position: absolute;
+            font-weight: bold;
+            font-size: 3em;
+            top: -0.3em;
+            left: -1vw;
         }
+        &::after{
+            content: "\201D";
+            position: absolute;
+            font-weight: bold;
+            font-size: 3em;
+            bottom: -0.5em;
+            right: -1vw;
+        }
+    }
 
-        .navbar a{
-            float: left;
-            padding: auto;
-            font-size: 20px;
-            color: white;
-            text-align: center;
-            padding: 1vw;
-            text-decoration: none;
-        }
+    #DataRepo{
+        background-color: #d1d1d1;
+        border-radius: 0;
+    }
 
-        .navbar #sussy{
-            border-right-style: solid;
-        }
+    #DataRepo h1{
+        color: #03042d;
+    }
 
-        .navbar #sussy:hover{
-            background-color: white;
-            transition: 0.6s;
-            color: #03042d;
-        }
+    /* Navbar CSS */
+    .navbar{
+        top: 0;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        height: 70px;
+        background-color: rgb(63, 66, 69);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        z-index: 1;
+    }
 
-        .navbar a:hover{
-            background-color: #03042d;
-            color: white;
-            transition: 0.4s;
-        }
-        
-        /* Grid-based CSS */
+    .navbar a{
+        float: left;
+        padding: auto;
+        color: white;
+        text-align: center;
+        padding: 1vw;
+        text-decoration: none;
+    }
 
-        .wrapper{
-            display: grid;
-            padding: 5vw 5vh;
-            grid-template-columns: 1fr 1fr;
-        }
+    .navbar #sussy{
+        border-right-style: solid;
+    }
 
-        .wrapper2{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            width: 100%;
-        }
+    .navbar #sussy:hover{
+        background-color: white;
+        transition: 0.6s;
+        color: #03042d;
+    }
 
-        .wrapper3{
-            display: grid;
-            padding: 0;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+    .navbar a:hover{
+        background-color: #03042d;
+        color: white;
+        transition: 0.4s;
+    }
+    
+    /* Grid-based CSS */
 
-        .wrapper4{
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            padding-left: 0;
-            padding-right: 0;
-        }
+    .wrapper{
+        display: grid;
+        padding: 5vw 5vh;
+        grid-template-columns: 1fr 1fr;
+    }
 
-        .box1{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .wrapper2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
 
-        .box2{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .wrapper3{
+        display: grid;
+        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-        .box3{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .wrapper4{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-        .box11{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .box1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .box12{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            background-color: rgb(99,132,173,0.3);
-        }
+    .box2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .intro2{
-            grid-column-start: 2;
-            grid-column-end: 4;
-        }
+    .box3{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .about1{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            background-color: rgb(99,132,173,0.3);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        .about2{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            background-color: rgb(99,132,173,0.3);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        .about3{
-            grid-column-start: 3;
-            grid-column-end: 4;
-            background-color: rgb(99,132,173,0.3);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
+    .box11{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        .image{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        /* Miscellaneous */
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-        }
+    .box12{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(99,132,173,0.3);
+    }
 
-        a {
-            color: #03042d;
-        }
+    .about1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: rgb(99,132,173,0.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .about2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: rgb(99,132,173,0.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .about3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: rgb(99,132,173,0.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 
-        li {
-            list-style: none;
-            font-size: 20px
-        }
+    .intro2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
 
-        p {
-            font-size: 20px
-        }
-    </style>
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Miscellaneous */
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    a {
+        color: #03042d;
+    }
+
+    li {
+        list-style: none;
+        font-size: 20px
+    }
+
+    p {
+        font-size: 20px
+    }
+</style>
