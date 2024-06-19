@@ -316,9 +316,6 @@
                 We primarily focused on addressing the first objective and hypothesis, which was achieved through statistical testing.
                 We have achieved a p-value lower than 0.005 for all three fields—the arts, sciences, and business. This means that the results are all statistically significant for all three fields.
                 This also means that we reject the null hypothesis. As such, the level of participation of Filipinos is correlated to their highest level of educational attainment across all three fields of expertise.
-                <br><br>
-                For our second hypothesis, we have found no correlation between perceived usefulness of knowledge and level of participation across all three fields—the arts, sciences, and business.
-                This means that across the different fields of expertiese, the perceived usefulness of knowledge learned from school does not influences Filipinos seeking jobs.
             </p>
         </section>
 
@@ -362,7 +359,7 @@
             <div class="about2">
                 <h1 style="text-align:center">Lawrence Bermudez</h1>
                 <p style="font-size: 15; text-align: center">
-                    Good morning there! I am Lawrence, a 2nd year Computer Science student at UP Diliman. I enjoy programming casually, whether for games or for just appreciating the logic with how programs work <br> <br>
+                    Good morning there! I am Lawrence, a 2nd year Computer Science student at UP Diliman. I enjoy programming casually, whether for games or for just appreciating the logic with how programs work. <br> <br>
                     With the little time I usually have, I generally play lighter games such as rhythm games, especially osu!. <br> <br>
                     You may contact me through my email below, or through my IP at [REDACTED]. See you!
                 </p>
@@ -373,7 +370,7 @@
                 <p style="font-size: 15; text-align: center"> 
                     o/ Hi! I'm Yuwen and I am a 2nd year Computer Science student at UP Diliman. I like video games (a little bit too much) so now I'm in the CS world! <br> <br>
                     Other than malding over terrible gacha rates ingame, I mostly spend the day finishing requirements and dipping my hands into projects relating to Computer Science such Front-End Web development and game development.
-                    I also enjoy watching vtubers in my spare time (go watch <a href="https://www.youtube.com/@TakaneLui">Takane Lui</a>)
+                    I also enjoy watching vtubers in my spare time (go watch <a href="https://www.youtube.com/@TakaneLui">Takane Lui</a>).
                 </p>
                 <p style="text-align:center"> <br> <br> <br> elsaavedra@up.edu.ph</p>
             </div>
