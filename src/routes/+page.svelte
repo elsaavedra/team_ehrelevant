@@ -1,5 +1,6 @@
 <script>
-	import a1 from '$lib/images/question_1a_plot1.png';
+	import k12 from '$lib/images/K12-banner1.jpg';
+    import a1 from '$lib/images/question_1a_plot1.png';
     import b1 from '$lib/images/question_1b_plot1.png';
     import c1 from '$lib/images/question_1c_plot1.png';
     import a2 from '$lib/images/question_2a_plot1.png';
@@ -18,7 +19,7 @@
         <a href="#Conc">Conclusion</a>
     </ul>
     
-    <div class="content">
+    <section class="content">
     <!-- svelte-ignore a11y-distracting-elements -->
     <marquee scrollamount=30 id="Introduction">team_ehrelevant says hello world</marquee>
     
@@ -34,14 +35,26 @@
             However, one's education, strictly focusing on the schooling aspect of education, isn't necessarily applicable to one's field of work.
             This may be due to many reasons such as a shift in interest, a cruel demand in one's specialization, or simply the lack of available jobs.
         </p>
+        
+        <section class="wrapper4">
+            <div class="image">
+                <img src={k12} alt="K-12 Banner" style="
+                width: 40vw;
+                padding: 1em;
+                border-radius: 25px;">
+                <p style="display: inline;">Source: <a href="https://thepost.net.ph/news/nation/k-12-a-legacy-of-pnoy-deped">The Post Ph</a></p>
+            </div>
 
-        <p id="sub">
-            In the Philippines, one such shift in education would be the implementation of the K-12 basic education curriculum in 2012.
-            This change was an attempt to improve current schooling to bring up “job-ready” students after graduating their 12th grade.
-            Despite the improvement in their Math and Science subjects, most major companies in the Philippines would still prefer college graduates over high school graduates.<sup><a href="https://www.philstar.com/headlines/2023/05/12/2265854/deped-forms-task-force-employability-issues-senior-high-graduates">[1]</a></sup>
-            Most K-12 graduates that were lucky enough to be employed receive only minimum wage for entry-level positions while college graduates receive many more benefits than this.<sup><a href="https://www.philstar.com/headlines/2023/12/04/2316419/most-job-vacancies-accepting-senior-high-grads-offer-minimum-wage-work-dole">[2]</a></sup>
-            This heavily contrasts one of the main objectives of K-12 to “produce employable students as early as post-high school”. <sup><a href="https://www.philstar.com/headlines/2023/05/12/2265854/deped-forms-task-force-employability-issues-senior-high-graduates">[3]</a></sup>
-        </p>
+            <div id="sub">
+                <p class="intro2">
+                    In the Philippines, one such shift in education would be the implementation of the K-12 basic education curriculum in 2012.
+                    This change was an attempt to improve current schooling to bring up “job-ready” students after graduating their 12th grade.
+                    Despite the improvement in their Math and Science subjects, most major companies in the Philippines would still prefer college graduates over high school graduates.<sup><a href="https://www.philstar.com/headlines/2023/05/12/2265854/deped-forms-task-force-employability-issues-senior-high-graduates">[1]</a></sup>
+                    Most K-12 graduates that were lucky enough to be employed receive only minimum wage for entry-level positions while college graduates receive many more benefits than this.<sup><a href="https://www.philstar.com/headlines/2023/12/04/2316419/most-job-vacancies-accepting-senior-high-grads-offer-minimum-wage-work-dole">[2]</a></sup>
+                    This heavily contrasts one of the main objectives of K-12 to “produce employable students as early as post-high school”. <sup><a href="https://www.philstar.com/headlines/2023/05/12/2265854/deped-forms-task-force-employability-issues-senior-high-graduates">[3]</a></sup>
+                </p>
+            </div>
+        </section>
     </section>
 
     <section class="wrapper">
@@ -99,10 +112,10 @@
     </section>
 
     <section id="DataRepo">
-    <h1> Dataset Description </h1>
-        <section id="sub">
-            <h2> Dataset Source: FLEMMS 2019 </h2>
-                <p>
+    <h1 style="font-size: 30px;"> Dataset Description </h1>
+        <section id="sub1">
+            <h2 style="color: #03042d;"> Dataset Source: FLEMMS 2019 </h2>
+                <p id="sub3">
                     The Philippine Statistics Authority (PSA) organizes a survey known as the <a href = "https://psada.psa.gov.ph/catalog/FLEMMS/about"> Functional Literacy, Education and Mass Media Survey (FLEMMS) </a> as a regular check on the state of the country's education systems.
                     FLEMMS collects general information about each respondent's educational background, demographic information, and household information, followed by questions to ask and assess their ability to read, write, and answer questions.
                     These assessments are then interpreted to classify each respondent's educational skills through a metric known as the Functional Literacy [Level].
@@ -111,96 +124,173 @@
                 </p>
         </section>
 
-        <section id="sub">
-            <h2> Data Collection </h2>
-                <p> 
+        <section id="sub1">
+            <h2 style="color: #03042d;"> Data Collection </h2>
+                <p id="sub3"> 
                     The results of the FLEMMS 2019 survey are divided into several CSV (Comma Separated Value) files tabulating the information gathered from each respondent.
                     Among the files, this study intends to investigate the data from the responses in the Household Name CSV file. The Household Name CSV contains the respondents' answers to the Individual Questionnaire, which contains questions that directly assess their educational background and overall literacy.
                     The relevant files for the FLEMMS 2019 dataset can be downloaded from the <a href="https://psada.psa.gov.ph/catalog/FLEMMS/about"> Philippine Statistics Authority Data Archive (PSADA) website </a>.
                 </p>
         </section>
 
-        <section id="sub">
-            <h2> Data Preprocessing </h2>
-                <p> 
-                    From the Household Name CSV, the first few fields are kept to uniquely identify each of the data points of the dataset, namely the Region (REG), Urbanity (URB), Household ID (HHID), and the Respondent Line Number (RESP_LNO).
-                </p>
-
-                <p> 
-                    Furthermore, certain fields were found to be the most relevant to the study as variables to be kept, namely the Level of Participation (Q15A_ARTS, Q15B_SCIENCE, Q15C_BUSINESS), Knowledge in Job (Q21_KNOWLEDGE), and Highest Educational Attainment (C12_HEA_RT04).
-                    Other than these, other “potentially useful” fields were also kept for possible sub-correlation or confounding variables, which include the Technical-Vocational Variables (Q5_TECHVOC, Q5_TECHVOC_COURSE, Q5_SPECIFY_COURSE), the TESDA National Certification (Q6_TESDA_CERT),
-                    Activities to help other people (Q20_ACTIVITY), Age (C5_AGE_RT04), Sex (C4_SEX_RT04), and Ongoing School Status (C14_ATTEND_SCHOOL_RT04).
-                </p>
-
-                <p> 
-                    As such, the above-mentioned variables are kept in the “specific variables” to be used for the study, with any other columns deleted from the dataset. Nonetheless, both this reduced dataset and the full dataset may be found in the link below, for viewing reference.
-                </p>
+        <section id="sub1">
+            <h2 style="color: #03042d;"> Data Preprocessing </h2>
+                <div id="sub3">
+                    <p> 
+                        From the Household Name CSV, the first few fields are kept to uniquely identify each of the data points of the dataset, namely the Region (REG), Urbanity (URB), Household ID (HHID), and the Respondent Line Number (RESP_LNO).
+                    </p>
+                    <br>
+                    <p> 
+                        Furthermore, certain fields were found to be the most relevant to the study as variables to be kept, namely the Level of Participation (Q15A_ARTS, Q15B_SCIENCE, Q15C_BUSINESS), Knowledge in Job (Q21_KNOWLEDGE), and Highest Educational Attainment (C12_HEA_RT04).
+                        Other than these, other “potentially useful” fields were also kept for possible sub-correlation or confounding variables, which include the Technical-Vocational Variables (Q5_TECHVOC, Q5_TECHVOC_COURSE, Q5_SPECIFY_COURSE), the TESDA National Certification (Q6_TESDA_CERT),
+                        Activities to help other people (Q20_ACTIVITY), Age (C5_AGE_RT04), Sex (C4_SEX_RT04), and Ongoing School Status (C14_ATTEND_SCHOOL_RT04).
+                    </p>
+                    <br>
+                    <p> 
+                        As such, the above-mentioned variables are kept in the “specific variables” to be used for the study, with any other columns deleted from the dataset. Nonetheless, both this reduced dataset and the full dataset may be found in the link below, for viewing reference.
+                    </p>
+                </div>
         </section>
 
         <section id="sub1">
-        <h2> Dataset Link </h2>
-            <p><a href="https://docs.google.com/spreadsheets/d/1wG50_tLEtZrU1jB0AkM7doo6a6njIig8xorNHGk05Ig/edit#gid=1228805475">Here</a> is a link to the datasheet that will be used for this research. This contains the following: </p>
-            
-            <ul id="sub3">
-                <li>Selected questions from FLEMMS 2019 dataset to be analyzed</li>
-                <li>Dictionary of selected questions from FLEMMS 2019 dataset to be analyzed</li>
-                <li>Full unedited FLEMMS 2019 dataset</li>
-                <li>Dictionary of the unedited FLEMMS 2019 dataset</li>
-            </ul>
+        <h2 style="color: #03042d;"> Dataset Link </h2>
+            <div id="sub3">
+                <p><a href="https://docs.google.com/spreadsheets/d/1wG50_tLEtZrU1jB0AkM7doo6a6njIig8xorNHGk05Ig/edit#gid=1228805475">Here</a> is a link to the datasheet that will be used for this research. This contains the following: </p>
+                <br>
+                <ul>
+                    <li>Selected questions from FLEMMS 2019 dataset to be analyzed</li>
+                    <li>Dictionary of selected questions from FLEMMS 2019 dataset to be analyzed</li>
+                    <li>Full unedited FLEMMS 2019 dataset</li>
+                    <li>Dictionary of the unedited FLEMMS 2019 dataset</li>
+                </ul>
+            </div>
         </section>
     </section>
 
     <section id="DataVisual">
         <h1> Visualization of Data </h1>
+        <section id="sub3">
+            <p style="text-align:justify">Here we have three box plots which plots the participant's highest educational attainment against their level of participation. The left-most, middle, and right-most plots correspond to the participants' participation in the Arts, Sciences, and Business respectively.
+                The specifics of each level of participation and educational attainment is discussed below.
+                The "boxes" in the plot corresponds to the frequency of answers for each category. This means that each column's width is only respective to itself and not globally related.</p>
+            
+            <br>
+
+            <p style="text-align:justify">For the arts, we can see a general upward trend between higher educational attainment and level of participation. 
+                This suggests that education is seen to be closely related to the level of one's participation in the field of arts. 
+                This also suggests that to feel more involved in art, a higher educational attainment would be better.
+                <br> <br>
+                For sciences, there's also a general upward trend, similar to the arts, where a higher level of educational attainment allows one to feel more involved. 
+                It is interesting to note that those who only received an early childhood education has responses evenly spread out from 1–4. 
+                This either suggest that the participant is not aware of the full scale of their participation, or that more education does not necessarily equate to more participation.
+                <br> <br>
+                Finally, for business, it's interesting to see that after finishing highschool and your bachelor's degree, there is a general downward trend in level of participation. 
+                This may suggest that further education after your bachelor's degree will actually decrease your level of participation.</p>
+        </section>
+
         <section class="wrapper3">
-            <section id="sub">
-                <img src={a1} alt="Participation in Arts" width=50% class="center">
+            <section id="sub4">
+                <img src={a1} alt="Participation in Arts" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Level of Participation in Arts vs Highest Educational Attainment</p>
             </section>
-            <section id="sub">
-                <img src={b1} alt="Participation in Science" width=50% class="center">
+            <section id="sub4">
+                <img src={b1} alt="Participation in Science" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Level of Participation in Science vs Highest Educational Attainment</p>
             </section>
-            <section id="sub">
-                <img src={c1} alt="Participation in Business" width=50% class="center">
+            <section id="sub4">
+                <img src={c1} alt="Participation in Business" class="center" style='border-radius: 25px; margin: 5px'>
                 <p style="text-align:center">Level of Participation in Business vs Highest Educational Attainment</p>
             </section>
         </section>
 
+        <section id="sub3">
+            <p>lorem ipsum</p>
+        </section>
+
         <section class="wrapper3">
-            <section id="sub">
-                <img src={a2} alt="Knowledge in Arts" class="center">
-                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Arts</p>
+            <section id="sub4">
+                <img src={a2} alt="Knowledge in Arts" class="center" style='border-radius: 25px; margin: 5px'>
+                <p style="text-align:center">Perceived Usefulness of Knowledge vs Level of Participation in Arts</p>
             </section>
-            <section id="sub">
-                <img src={b2} alt="Knowledge in Science" class="center">
-                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Science</p>
+            <section id="sub4">
+                <img src={b2} alt="Knowledge in Science" class="center" style='border-radius: 25px; margin: 5px'>
+                <p style="text-align:center">Perceived Usefulness of Knowledge vs Level of Participation in Science</p>
             </section>
-            <section id="sub">
-                <img src={c2} alt="Knowledge in Business" class="center">
-                <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
+            <section id="sub4">
+                <img src={c2} alt="Knowledge in Business" class="center" style='border-radius: 25px; margin: 5px'>
+                <p style="text-align:center">Perceived Usefulness of Knowledge vs Level of Participation in Business</p>
             </section>
         </section>
     </section>
 
     <section>
         <h1> Hypothesis Testing </h1>
-        <section id="sub">
-            <img src={hyp} alt="Hypothesis Testing" class="center" style='width: 50%'>
-            <p style="text-align:center">Significance of First Hypothesis</p>
+        <div class="wrapper" id="sub1">
+        <section id="box1" class="image">
+            <div>
+                <img src={hyp} alt="Hypothesis Testing" class="center" style='width: 100%'>
+                <p style="text-align:center">Significance of First Hypothesis</p>
+            </div>
         </section>
+        <section id="box2">
+            <p> Hypothesis testing was done for the first objective, determining the correlation between the respondents' Level of Participation in different fields of expertise and their Highest Level of Educational Attainment. 
+                Each of these variables is defined on an ordinal scale, with their values as follows: </p>
+            
+            <br>
+            <p>Highest Level of Educational Attainment</p>
+            <ul>
+                <li> 0 (Did not study) </li>
+                <li> 1 (Early Childhood Education) </li>
+                <li> 2 (Elementary School) </li>
+                <li> 3 (Junior High School) </li>
+                <li> 4 (Senior High School) </li>
+                <li> 5 (Post-Secondary Non-Tertiary) </li>
+                <li> 6 (Short-cycle Tertiary) </li>
+                <li> 7 (Bachelor or eqv.) </li>
+                <li> 8 (Master or eqv.) </li>
+                <li> 9 (Doctorate or eqv.) </li>
+            </ul>
+            <br>
+            <p>Level of Participation A (Arts and Performance)</p>
+            <ul>
+                <li> 5 (Always) </li>
+                <li> 4 (Often) </li>
+                <li> 3 (Sometimes) </li>
+                <li> 2 (Rarely) </li>
+                <li> 1 (Never) </li>
+            </ul>
+            <br>
+            <p>Level of Participation B (Science and Technology)</p>
+            <ul>
+                <li> 5 (Always) </li>
+                <li> 4 (Often) </li>
+                <li> 3 (Sometimes) </li>
+                <li> 2 (Rarely) </li>
+                <li> 1 (Never) </li>
+            </ul>
+            <br>
+            <p>Level of Participation C (Work and Business) </p>
+            <ul>
+                <li> 5 (Always) </li>
+                <li> 4 (Often) </li>
+                <li> 3 (Sometimes) </li>
+                <li> 2 (Rarely) </li>
+                <li> 1 (Never) </li>
+            </ul>
+        </section>
+        </div> 
     </section>
 
     <section id="Model">
         <h1> Modelling </h1>
-        <section id="sub">
+        <section id="sub3">
             <p style="text-align:center">Lorem Ipsum</p>
         </section>
     </section>
 
     <section id="Conc">
         <h1> Conclusion </h1>
-        <section id="sub">
+        <section id="sub3">
             <p style="text-align:center">Lorem Ipsum</p>
         </section>
     </section>
@@ -238,7 +328,7 @@
             </div>
         </section>
     </section>
-    </div>
+</section>
 </body>
 
 <style>
@@ -280,6 +370,7 @@
         background-repeat: repeat;
         background-position: center;
         background-attachment: fixed;
+        font-size: 20px;
     }
 
     section {
@@ -298,8 +389,9 @@
 
     /* Specific CSS */
     .content{
-        margin-top: 50px;
+        margin-top: 70px;
         margin-bottom: 0;
+        padding: 0;
         position: static;
     }
 
@@ -307,16 +399,18 @@
         padding: 2em;
         margin: 2vh;
         border-radius: 20px;
-        background-color: rgb(99,132,173,0.7);
+        background-color: rgb(99,132,173,0.6);
         text-align: justify;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #sub1 {
-        padding: 5em;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
+        padding: 1em;
+        margin: 1vh;
         border-radius: 20px;
-        background-color: rgb(99,132,173,0.3);
+        background-color: rgb(99,132,173,0.6);
         text-align: justify;
     }
     
@@ -336,6 +430,14 @@
         text-align: justify;
     }
 
+    #sub4 {
+        padding: 20px;
+        margin: 1vh;
+        border-radius: 20px;
+        background-color: rgb(27,24,28,0.8);
+        text-align: justify;
+    }
+    
     #quote {
         font-size: 50px;
         text-align: center;
@@ -359,15 +461,26 @@
         }
     }
 
+    #DataRepo{
+        background-color: rgb(209, 209, 209, 0.9);
+        border-radius: 0;
+    }
+
+    #DataRepo h1{
+        color: #03042d;
+    }
+
     /* Navbar CSS */
     .navbar{
         top: 0;
         margin: 0;
         padding: 10px;
         width: 100%;
-        background-color: rgb(93,100,106);
-        height: auto;
+        height: 70px;
+        background-color: rgb(63, 66, 69);
         position: fixed;
+        display: flex;
+        align-items: center;
         overflow: hidden;
         z-index: 1;
     }
@@ -375,7 +488,6 @@
     .navbar a{
         float: left;
         padding: auto;
-        font-size: 20px;
         color: white;
         text-align: center;
         padding: 1vw;
@@ -410,6 +522,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
+    }
+
+    .wrapper3{
+        display: grid;
+        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .wrapper4{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .box1{
@@ -452,11 +577,6 @@
         background-color: rgb(99,132,173,0.3);
     }
 
-    .wrapper3{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
     .about1{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -475,6 +595,20 @@
         background-color: rgb(99,132,173,0.3);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
+
+    .intro2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .image{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
     
     /* Miscellaneous */
     .center {
@@ -489,8 +623,11 @@
     }
 
     li {
-        list-style: none;
-        font-size: 20px
+        font-size: 20px;
+    }
+
+    ul {
+        padding-left: 30px;
     }
 
     p {
