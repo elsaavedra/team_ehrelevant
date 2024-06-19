@@ -41,9 +41,8 @@
                 <img src={k12} alt="K-12 Banner" style="
                 width: 40vw;
                 padding: 1em;
-                grid-column-start: 1;
-                grid-column-end: 2;
                 border-radius: 25px;">
+                <p style="display: inline;">Source: <a href="https://thepost.net.ph/news/nation/k-12-a-legacy-of-pnoy-deped">The Post Ph</a></p>
             </div>
 
             <div id="sub">
@@ -185,6 +184,10 @@
             </section>
         </section>
 
+        <section id="sub3">
+            <p style="text-align:center">Lorem Ipsum</p>
+        </section>
+
         <section class="wrapper3">
             <section id="sub4">
                 <img src={a2} alt="Knowledge in Arts" class="center" style='border-radius: 25px; margin: 5px'>
@@ -199,26 +202,34 @@
                 <p style="text-align:center">Perceived Use of Knowledge vs Level of Participation in Business</p>
             </section>
         </section>
+
+        <section id="sub3">
+            <p style="text-align:center">Lorem Ipsum</p>
+        </section>
     </section>
 
     <section>
         <h1> Hypothesis Testing </h1>
-        <section id="sub1">
-            <img src={hyp} alt="Hypothesis Testing" class="center" style='width: 50%'>
+        <div class="wrapper" id="sub1">
+        <section id="box1" style="padding: 10px;">
+            <img src={hyp} alt="Hypothesis Testing" class="center" style='width: 100%'>
             <p style="text-align:center">Significance of First Hypothesis</p>
         </section>
+        <section id="box2">
+        </section>
+        </div> 
     </section>
 
     <section id="Model">
         <h1> Modelling </h1>
-        <section id="sub1">
+        <section id="sub3">
             <p style="text-align:center">Lorem Ipsum</p>
         </section>
     </section>
 
     <section id="Conc">
         <h1> Conclusion </h1>
-        <section id="sub1">
+        <section id="sub3">
             <p style="text-align:center">Lorem Ipsum</p>
         </section>
     </section>
@@ -335,7 +346,7 @@
     }
 
     #sub1 {
-        padding: 5em;
+        padding: 1em;
         margin: 1vh;
         border-radius: 20px;
         background-color: rgb(99,132,173,0.6);
@@ -390,7 +401,7 @@
     }
 
     #DataRepo{
-        background-color: #d1d1d1;
+        background-color: rgb(209, 209, 209, 0.8);
         border-radius: 0;
     }
 
@@ -533,6 +544,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
     
     /* Miscellaneous */
